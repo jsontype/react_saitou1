@@ -9,19 +9,29 @@ export default function App() {
   return (
     <div className="App">
       <span>
-        <Link to="/">Home</Link> /{" "}
+        <Link className="menuItem" to="/">
+          Home
+        </Link>{" "}
       </span>
       <span>
-        <Link to="/movie">Movies</Link> /{" "}
+        <Link className="menuItem" to="/movie">
+          Movies
+        </Link>{" "}
       </span>
       <span>
-        <Link to="/count">Count</Link> /{" "}
+        <Link className="menuItem" to="/count">
+          Count
+        </Link>{" "}
       </span>
       <span>
-        <Link to="/news">News</Link> /{" "}
+        <Link className="menuItem" to="/news">
+          News
+        </Link>{" "}
       </span>
       <span>
-        <Link to="/todos">Todos</Link>
+        <Link className="menuItem" to="/todos">
+          Todos
+        </Link>
       </span>
 
       <hr />
