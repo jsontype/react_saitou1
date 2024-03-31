@@ -12,6 +12,7 @@ export default function ShopJewelries() {
       .then((json) => {
         const items = json.filter((item) => item.category === "jewelery");
         setJewelries(items);
+        console.log("items: ", items);
       });
   }, []);
 
