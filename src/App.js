@@ -4,6 +4,8 @@ import Movies from "./components/Movies";
 import Count from "./components/Count";
 import News from "./components/News";
 import Todos from "./components/Todos";
+import Shopping1 from "./components/Shopping1";
+import Shopping2 from "./components/Shopping2";
 
 export default function App() {
   return (
@@ -11,26 +13,36 @@ export default function App() {
       <span>
         <Link className="menuItem" to="/">
           Home
-        </Link>{" "}
+        </Link>
       </span>
       <span>
         <Link className="menuItem" to="/movie">
           Movies
-        </Link>{" "}
+        </Link>
       </span>
       <span>
         <Link className="menuItem" to="/count">
           Count
-        </Link>{" "}
+        </Link>
       </span>
       <span>
         <Link className="menuItem" to="/news">
           News
-        </Link>{" "}
+        </Link>
       </span>
       <span>
         <Link className="menuItem" to="/todos">
           Todos
+        </Link>
+      </span>
+      <span>
+        <Link className="menuItem" to="/shopping1">
+          Apparels
+        </Link>
+      </span>
+      <span>
+        <Link className="menuItem" to="/shopping2">
+          Watches
         </Link>
       </span>
 
@@ -42,6 +54,8 @@ export default function App() {
         <Route path="/count" element={<Count />} />
         <Route path="/news" element={<News />} />
         <Route path="/todos" element={<Todos />} />
+        <Route path="/shopping1" element={<Shopping1 />} />
+        <Route path="/shopping2" element={<Shopping2 />} />
       </Routes>
     </div>
   );

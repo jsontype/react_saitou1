@@ -5,18 +5,16 @@
 .menuItem {
   text-decoration: none;
   display: inline-block;
-  width: 100%;
-  max-width: 50px; /* ボタン幅 */
   border: 2px solid #B476CE; /* 線幅・種類・色 */
   color: #f8d9f2; /* 文字色 */
   background: #B476CE; /* 背景色 */
-  padding: 1em 2em;
+  margin: 0 2px;
+  padding: 0.5em 1em;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
   transition: 0.3s;
 }
-  
 
 menuItem:hover {
   background: #faeeff
