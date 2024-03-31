@@ -4,8 +4,8 @@ import Movies from "./components/Movies";
 import Count from "./components/Count";
 import News from "./components/News";
 import Todos from "./components/Todos";
-import Shopping1 from "./components/Shopping1";
-import Shopping2 from "./components/Shopping2";
+import ShopApparels from "./components/ShopApparels";
+import ShopJewelries from "./components/ShopJewelries";
 
 export default function App() {
   return (
@@ -36,13 +36,13 @@ export default function App() {
         </Link>
       </span>
       <span>
-        <Link className="menuItem" to="/shopping1">
+        <Link className="menuItem" to="/shop-apparels">
           Apparels
         </Link>
       </span>
       <span>
-        <Link className="menuItem" to="/shopping2">
-          Watches
+        <Link className="menuItem" to="/shop-jewelries">
+          Jewelries
         </Link>
       </span>
 
@@ -54,8 +54,8 @@ export default function App() {
         <Route path="/count" element={<Count />} />
         <Route path="/news" element={<News />} />
         <Route path="/todos" element={<Todos />} />
-        <Route path="/shopping1" element={<Shopping1 />} />
-        <Route path="/shopping2" element={<Shopping2 />} />
+        <Route path="/shop-apparels" element={<ShopApparels />} />
+        <Route path="/shop-jewelries" element={<ShopJewelries />} />
       </Routes>
     </div>
   );
