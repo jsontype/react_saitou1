@@ -32,7 +32,7 @@ export default function Todos() {
           </button>
         </div>
       </div>
-    );
+    )
   });
 
   // Insert
