@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route, Link } from "react-router-dom";
+import Movies from "./components/Movies";
+import Count from "./components/Count";
+import News from "./components/News";
+import Todos from "./components/Todos";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <span>
+        <Link to="/">Home</Link>/
+      </span>
+      <span>
+        <Link to="/movie">Movies</Link>/
+      </span>
+      <span>
+        <Link to="/count">Count</Link>/
+      </span>
+      <span>
+        <Link to="/news">News</Link>/
+      </span>
+      <span>
+        <Link to="/todos">Todos</Link>
+      </span>
+
+      <hr />
+
+      <Routes>
+        <Route path="/" element={<h1>Home</h1>} />
+        <Route path="/movie" element={<Movies />} />
+        <Route path="/count" element={<Count />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/todos" element={<Todos />} />
+      </Routes>
     </div>
   );
 }
-
-export default App;
