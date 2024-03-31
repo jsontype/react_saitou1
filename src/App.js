@@ -9,16 +9,16 @@ export default function App() {
   return (
     <div className="App">
       <span>
-        <Link to="/">Home</Link>/
+        <Link to="/">Home</Link> /{" "}
       </span>
       <span>
-        <Link to="/movie">Movies</Link>/
+        <Link to="/movie">Movies</Link> /{" "}
       </span>
       <span>
-        <Link to="/count">Count</Link>/
+        <Link to="/count">Count</Link> /{" "}
       </span>
       <span>
-        <Link to="/news">News</Link>/
+        <Link to="/news">News</Link> /{" "}
       </span>
       <span>
         <Link to="/todos">Todos</Link>
