@@ -1,0 +1,9 @@
+.newsTitle{
+  text-decoration:none;
+  color: #008AA3;
+}
+
+.newsTitle:hover{
+  background: #008AA3;
+  color: white;
+}
