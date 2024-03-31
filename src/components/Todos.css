@@ -3,6 +3,7 @@
 }
 
 .todoCompleted {
+  color: pink;
   margin-left: 10px;
 }
 
