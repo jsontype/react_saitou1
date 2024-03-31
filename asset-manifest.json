@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react_saitou1/static/css/main.a0c9f527.css",
-    "main.js": "/react_saitou1/static/js/main.2b425784.js",
+    "main.css": "/react_saitou1/static/css/main.40024fc4.css",
+    "main.js": "/react_saitou1/static/js/main.a1279a79.js",
     "index.html": "/react_saitou1/index.html",
-    "main.a0c9f527.css.map": "/react_saitou1/static/css/main.a0c9f527.css.map",
-    "main.2b425784.js.map": "/react_saitou1/static/js/main.2b425784.js.map"
+    "main.40024fc4.css.map": "/react_saitou1/static/css/main.40024fc4.css.map",
+    "main.a1279a79.js.map": "/react_saitou1/static/js/main.a1279a79.js.map"
   },
   "entrypoints": [
-    "static/css/main.a0c9f527.css",
-    "static/js/main.2b425784.js"
+    "static/css/main.40024fc4.css",
+    "static/js/main.a1279a79.js"
   ]
 }
