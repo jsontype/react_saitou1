@@ -1,5 +1,23 @@
 .jewelTitle {
+  color: gray;
   font-size: 1.5rem;
   font-weight: bold;
   margin: 1rem 0;
+}
+
+.jewelImg {
+  display: block;
+  width: 250px;
+}
+
+.good {
+  color: blue;
+}
+
+.soso {
+  color: orange;
+}
+
+.bad {
+  color: red;
 }
