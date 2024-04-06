@@ -44,8 +44,8 @@ export default function ShopJewelries() {
 
   return (
     <div>
-      <h1>ShopJewelries</h1>
+      <h1>Shop Jewelries</h1>
       <div>{render}</div>
     </div>
-  );
+  )
 }
