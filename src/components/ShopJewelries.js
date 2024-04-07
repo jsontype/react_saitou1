@@ -43,7 +43,7 @@ export default function ShopJewelries() {
 
   return (
     <div>
-      <h1>Shop Jewelries</h1>
+      <h1>ショップ : ジュエリー(Jewelry)</h1>
       <div>{render}</div>
     </div>
   )
