@@ -1,7 +1,7 @@
 {
   "homepage": "https://jsontype.github.io/react_saitou1/",
   "name": "react_saitou1",
-  "version": "0.0.1",
+  "version": "0.5.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
