@@ -1,0 +1,47 @@
+@import '../styles/resources.scss';
+
+.countButton {
+  color: $purple;
+}
+
+.countButtonPlus {
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  width: $margin-50;
+  margin: auto;
+  padding: $margin-5 $margin-1;
+  font-weight: bold;
+  border: $margin-2 solid $purple;
+  color: $purple;
+  border-radius: 100vh;
+  transition: 0.5s;
+  &:hover {
+    background-color: lighten($purple, 10%);
+    color: $white;
+  }
+  &:active {
+    background-color: darken($purple, 10%);
+  }
+}
+
+.countButtonMinus {
+    text-align: center;
+    // vertical-align: middle;
+    text-decoration: none;
+    width: $margin-50;
+    margin: auto;
+    padding: $margin-5 $margin-1;
+    font-weight: bold;
+    border: $margin-2 solid $purple;
+    color: $purple;
+    border-radius: 100vh;
+    transition: 0.5s;
+    &:hover {
+      background-color: lighten($purple, 10%);
+      color: $white;
+    }
+    &:active {
+      background-color: darken($purple, 10%);
+    }
+  }
