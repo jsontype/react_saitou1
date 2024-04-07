@@ -1,0 +1,31 @@
+.apparelContainer {
+  text-align:  center; 
+  background: linear-gradient(rgb(255, 255, 255),#efc8ff);
+}
+
+.apparelTile {
+  color: #B476CE;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.apparelTile :hover {
+  background: #B476CE;
+  color: white;
+}
+
+.apparelPrice {
+  margin: 1rem 0;
+}
+
+.apparelImage {
+  width: 20%;
+  height: 400px;
+  object-fit: cover;
+  border: 1px solid #111;
+}
+
+.apparelDescription{
+  color:white;
+}
