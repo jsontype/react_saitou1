@@ -1,0 +1,24 @@
+@import '../styles/resources.scss';
+
+.jewelTitle {
+  font-size: 15px;
+  font-weight: bold;
+  margin: $margin-10 $margin-0;
+}
+
+.jewelImg {
+  display: block;
+  width: 250px;
+}
+
+.good {
+  color: blue;
+}
+
+.soso {
+  color: orange;
+}
+
+.bad {
+  color: red;
+}

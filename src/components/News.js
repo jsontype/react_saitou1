@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import "./News.css";
+import "./News.scss"
 
 export default function News() {
   const [news, setNews] = useState([]);
