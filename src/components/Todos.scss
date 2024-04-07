@@ -1,0 +1,14 @@
+@import '../styles/resources.scss';
+
+.todoTitle {
+  font-weight: bold;
+}
+
+.todoCompleted {
+  color: $pink;
+  margin-left: $margin-10;
+}
+
+.todoBtn {
+  margin-left: $margin-10;
+}
