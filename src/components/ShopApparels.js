@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import "./ShopApparels.css";
+import "./ShopApparels.scss";
 
 export default function ShopApparels() {
   const [apparels, setApparels] = useState([]);
