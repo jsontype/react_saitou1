@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./ShopJewelries.scss"
+import Count from "./Count"
 
 export default function ShopJewelries() {
   const [jewelries, setJewelries] = useState([])
@@ -22,7 +23,7 @@ export default function ShopJewelries() {
 
   const render = jewelries.map((jewel) => {
     return (
-      <div key={jewel.id}>
+      <div key={jewel.id} className="jewelContainer">
         <div className="jewelTitle">
           #{jewel.id} {jewel.title}
         </div>
@@ -37,6 +38,7 @@ export default function ShopJewelries() {
         <div className="jewelCount">評価した人数：{jewel.rating.count}人</div>
         <p>製品説明：{jewel.description}</p>
         <img className="jewelImg" src={jewel.image} alt={jewel.title}></img>
+        <Count />
       </div>
     )
   })
