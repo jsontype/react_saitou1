@@ -1,14 +1,26 @@
 @import '../styles/resources.scss';
 
+.jewelContainer {
+  text-align: center; 
+  background: linear-gradient(rgb(255, 255, 255),#efc8ff);
+}
+
 .jewelTitle {
-  font-size: 15px;
+  color: $purple;
+  font-size: $margin-17;
   font-weight: bold;
-  margin: $margin-10 $margin-0;
+  margin: $margin-15 $margin-0;
+  &:hover {
+  background: $purple;
+  color: $white;
+  }
 }
 
 .jewelImg {
-  display: block;
-  width: 250px;
+  width: 20%;
+  height: $margin-400;
+  object-fit: cover;
+  border: $margin-1 solid #111;
 }
 
 .good {
