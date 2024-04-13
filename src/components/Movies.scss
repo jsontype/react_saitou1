@@ -1,19 +1,7 @@
 @import '../styles/resources.scss';
 
 .movieTitle {
-  display: block;
-  color: $gray;
-  //$margin-24px: 24px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: $margin-5;
-  margin: $margin-10;
-  border: $margin-1 solid $white;
-  border-radius: $margin-5;
-  &:hover {
-    background-color: $pink;
-    color: $white;
-  }
+  @include movie-color($purple);
 }
 
 .movieImg {

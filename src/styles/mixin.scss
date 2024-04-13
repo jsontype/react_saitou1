@@ -1,0 +1,49 @@
+@mixin button-color($color) {
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  width: $margin-50;
+  margin: auto;
+  padding: $margin-5 $margin-1;
+  font-weight: bold;
+  border: $margin-2 solid $color;
+  color: $white;
+  border-radius: 100vh;
+  transition: 0.5s;
+
+  background: $color;
+  &:hover {
+    background: lighten($color,10%);
+  }
+  &:active {
+    background: darken($color,10%);
+  }
+}
+
+@mixin movie-color($color) {
+  display: block;
+  color: $gray;
+  font-weight: bold;
+  text-decoration: none;
+  padding: $margin-5;
+  margin: $margin-10;
+  border: $margin-1 solid $white;
+  border-radius: $margin-5;
+  &:hover {
+    background: lighten($color,10%);
+  }
+  &:active {
+    background: darken($color,10%);
+  }
+}
+
+@mixin todo-color($color) {
+  color: $color;
+  margin-left: $margin-10;
+  &:hover {
+    background: lighten($color,10%);
+  }
+  &:active {
+    background: darken($color,10%);
+  }
+}
