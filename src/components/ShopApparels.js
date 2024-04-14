@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./ShopApparels.scss";
+import Count from "./Count.js";
 
 export default function ShopApparels() {
   const [apparels, setApparels] = useState([]);
@@ -28,6 +29,9 @@ export default function ShopApparels() {
           />
         )}
         <div className="apparelDescription">{apparel.description}</div>
+        <div>
+          <Count />
+        </div>
       </div>
     ));
   };
