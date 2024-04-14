@@ -1,23 +1,31 @@
-import React, { useState, useEffect } from "react";
-import "./Todos.scss"
+import { useState, useEffect, SetStateAction } from "react";
+import "./Todos.scss";
 
 export default function Todos() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState<any[]>([]);
   const [inputText, setInputText] = useState("");
   const [todoKey, setTodoKey] = useState(0);
+
+  interface Todo {
+    id: number;
+    title?: string;
+    completed?: boolean;
+  }
 
   // Mounted
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/todos")
       .then((res) => res.json())
       .then((json) => {
-        const result = json.filter((item) => item.userId === 1);
+        const result = json.filter(
+          (item: { userId: number }) => item.userId === 1
+        );
         setTodos(result);
         setTodoKey(result.length + 1);
       });
   }, []);
 
-  const render = todos.map((todo) => {
+  const render = todos.map((todo: Todo) => {
     return (
       <div key={todo.id}>
         <div>
@@ -32,28 +40,28 @@ export default function Todos() {
           </button>
         </div>
       </div>
-    )
+    );
   });
 
   // Insert
-  const addTodo = (inputText) => {
-    const addItem = [...todos, { id: todoKey, title: inputText }];
+  const addTodo = (inputText: string) => {
+    const addItems: any = [...todos, { id: todoKey, title: inputText }];
     setTodoKey(todoKey + 1);
-    setTodos(addItem);
+    setTodos(addItems);
     setInputText("");
   };
 
   // Delete
-  const delTodo = (id) => {
-    const delItem = todos.filter((item) => {
+  const delTodo = (id: number) => {
+    const delItem = todos.filter((item: any) => {
       return item.id !== id;
     });
     setTodos(delItem);
   };
 
   // Update
-  const modTodo = (id) => {
-    const modItem = todos.map((item) => {
+  const modTodo = (id: number) => {
+    const modItem = todos.map((item: any): SetStateAction<never[]> => {
       return item.id === id ? { ...item, completed: !item.completed } : item;
     });
     setTodos(modItem);

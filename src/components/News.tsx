@@ -1,6 +1,5 @@
-import React from "react";
 import { useState, useEffect } from "react";
-import "./News.scss"
+import "./News.scss";
 
 export default function News() {
   const [news, setNews] = useState([]);
@@ -16,7 +15,14 @@ export default function News() {
 
   console.log("news: ", news);
 
-  const render = news.map((item) => {
+  interface News {
+    id: number;
+    title: string;
+    url: string;
+    user: string;
+  }
+
+  const render = news.map((item: News) => {
     return (
       <div key={item.id}>
         <a
