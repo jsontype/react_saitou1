@@ -1,9 +1,8 @@
-import React from "react";
 import { useState } from "react";
-import "./Count.scss";
+import "components/Count.scss";
 
 export default function Count() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState<number>(0);
 
   return (
     <div>
