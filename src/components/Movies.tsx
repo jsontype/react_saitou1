@@ -1,11 +1,22 @@
-import React from "react";
 import { useState, useEffect } from "react";
 import "./Movies.scss";
 
 export default function Movies() {
-  const [movies, setMovies] = useState([]);
+  const [movies, setMovies] = useState<Movie[]>([]);
 
-  const movieRatingClass = (rating) => {
+  interface Movie {
+    id: number;
+    url: string;
+    title: string;
+    year: number;
+    rating: number;
+    genres: string[];
+    runtime: number;
+    synopsis: string;
+    large_cover_image: string;
+  }
+
+  const movieRatingClass = (rating: number): string => {
     return rating >= 9 ? "good" : rating >= 7 ? "soso" : "bad";
   };
 
@@ -21,7 +32,7 @@ export default function Movies() {
 
   console.log("movies: ", movies);
 
-  const render = movies.map((movie) => {
+  const render = movies.map((movie: Movie) => {
     return (
       <div key={movie.id}>
         <a className="movieTitle" href={movie.url}>
