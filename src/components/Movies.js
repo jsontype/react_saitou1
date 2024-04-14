@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import "./Movies.css";
+import "./Movies.scss";
 
 export default function Movies() {
   const [movies, setMovies] = useState([]);

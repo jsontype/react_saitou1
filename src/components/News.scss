@@ -1,0 +1,11 @@
+@import '../styles/resources.scss';
+
+.newsTitle {
+  text-decoration: none;
+  color: $light-blue;
+}
+
+.newsTitle:hover {
+  background: $light-blue;
+  color: $white;
+}
